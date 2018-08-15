@@ -10,3 +10,5 @@ public class CursomcApplication {
 		SpringApplication.run(CursomcApplication.class, args);
 	}
 }
+
+//Iniciando um repositório de versionamento
