@@ -1,7 +1,10 @@
 package com.flpoliveira.cursomc.domain;
 
+import javax.persistence.Entity;
+
 import com.flpoliveira.cursomc.domain.enums.EstadoPagamento;
 
+@Entity
 public class PagamentoComCartao extends Pagamento{
 	/**
 	 * 
