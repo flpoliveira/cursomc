@@ -11,7 +11,7 @@ import javax.persistence.Id;
 
 import javax.persistence.ManyToMany;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 
 
 @Entity
@@ -26,7 +26,7 @@ public class Categoria implements Serializable
 	@GeneratedValue(strategy=GenerationType.IDENTITY) // Funciona com h2 e alguns outros bancos, essa forma de geracao de chave primaria
 	private Integer id;
 	
-	@JsonManagedReference
+	
 	@ManyToMany(mappedBy="categorias")
 	private List<Produto> produtos =  new ArrayList<>();
 	
